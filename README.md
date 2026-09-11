@@ -2,96 +2,79 @@
 
 
 
-# [Project Name] 🎯
+# Dry Air 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: ENOMEM
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Sehal Santhosh - Government Engineering College, Kozhikode
 
 ### Project Description
-[2-3 lines about what your project does]
+A deliberately useless tool for video meetings that detects awkward periods of silence and tries to make them even more awkward.
+
+The system monitors incoming audio, measures how long the sound level stays below a user-defined threshold, and increases the awkwardness level as the silence continues.
+
+At the highest level, it interrupts the silence with a sarcastic comment generated using Gemini AI and plays the corresponding voice intervention.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Nobody has spoken in a video meeting for too long, and apparently we need AI to panic about it.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Dry Air monitors incoming meeting audio, detects prolonged silence using the microphone, increases an Awkwardness Level as the silence continues, and uses AI-generated interventions to break the silence.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- JavaScript, HTML, CSS
+- Node.js, Express.js
+- Google GenAI SDK (@google/genai), Web Audio API
+- Visual Studio Code, Git, GitHub, Google Gemini API, Gemini TTS
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- N/A
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+- git clone https://github.com/cap-ain-ha-ch/useless-project-3.git
+- cd useless-project-3
+- npm install
+
 
 # Run
-[commands]
+- node server.js
+- - http://localhost:3000
+
 
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+# Screenshots 
+<img width="1583" height="970" alt="image" src="https://github.com/user-attachments/assets/01e3a861-7b9a-49d0-8ecb-1a6908bf2944" />
+Dry Air Home page
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1652" height="968" alt="Screenshot 2026-09-12 045933" src="https://github.com/user-attachments/assets/492adb0a-78ff-43ac-9734-5b92eaad8441" />
+Increasing level of silence
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1552" height="966" alt="image" src="https://github.com/user-attachments/assets/d1d34e9a-1c84-455c-b76b-7fc79c48074b" />
+At level 4, The website plays a cached gemini ai voice response
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+<img width="1408" height="768" alt="Gemini_Generated_Image_h7g9z6h7g9z6h7g9" src="https://github.com/user-attachments/assets/59640fc3-8b3e-4d13-86d7-ef91c78cfcfe" />
+Workflow of Dry Air, from meeting audio capture and silence detection to AI intervention.
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/drive/folders/1TxKKP1YQg-yBrHS3s4AOlryczsXTad1R?usp=drive_link
+Demonstration of the Dry Air web application detecting prolonged silence in a video meeting, progressively increasing the awkwardness level, and triggering an AI-generated intervention when the silence threshold is reached.
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Sehal Santhosh: Built this from ground up with the help of chat gpt
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
