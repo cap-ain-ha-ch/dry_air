@@ -70,7 +70,7 @@ Workflow of Dry Air, from meeting audio capture and silence detection to AI inte
 ### Project Demo
 # Video
 https://drive.google.com/drive/folders/1TxKKP1YQg-yBrHS3s4AOlryczsXTad1R?usp=drive_link
-Demonstration of the Dry Air web application detecting prolonged silence in a video meeting, progressively increasing the awkwardness level, and triggering an AI-generated intervention when the silence threshold is reached.
+- Demonstration of the Dry Air web application detecting prolonged silence in a video meeting, progressively increasing the awkwardness level, and triggering an AI-generated intervention when the silence threshold is reached.
 
 
 ## Team Contributions
