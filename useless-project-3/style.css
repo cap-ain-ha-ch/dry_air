@@ -1,0 +1,559 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+min-height: 100vh;
+
+
+font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+background:
+    radial-gradient(
+        circle at top,
+        #202020 0%,
+        #111 45%,
+        #090909 100%
+    );
+
+color: #f2f2f2;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 40px 20px;
+
+transition:
+    background 0.6s ease;
+
+
+}
+
+/* ---------- APP ---------- */
+
+.app {
+width: 100%;
+max-width: 1050px;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+
+
+margin-bottom: 35px;
+
+
+}
+
+.eyebrow {
+margin: 0 0 8px;
+
+
+font-size: 12px;
+font-weight: 700;
+
+letter-spacing: 3px;
+
+color: #888;
+
+
+}
+
+h1 {
+margin: 0;
+
+
+font-size: clamp(42px, 7vw, 72px);
+line-height: 0.95;
+letter-spacing: -3px;
+
+
+}
+
+.subtitle {
+margin: 15px 0 0;
+
+
+max-width: 600px;
+
+color: #999;
+
+font-size: 16px;
+line-height: 1.5;
+
+
+}
+
+.live-indicator {
+display: flex;
+align-items: center;
+gap: 9px;
+
+
+padding: 9px 13px;
+
+border: 1px solid #292929;
+border-radius: 100px;
+
+background: #151515;
+
+font-size: 11px;
+font-weight: 700;
+
+letter-spacing: 1px;
+color: #888;
+
+
+}
+
+.live-indicator span {
+width: 7px;
+height: 7px;
+
+
+border-radius: 50%;
+
+background: #58d68d;
+
+box-shadow:
+    0 0 10px rgba(88, 214, 141, 0.7);
+
+
+}
+
+/* ---------- DASHBOARD ---------- */
+
+.dashboard {
+display: grid;
+
+
+grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 1fr);
+
+gap: 18px;
+
+
+}
+
+/* ---------- CARDS ---------- */
+
+.level-card,
+.controls-card,
+.intervention-card {
+border: 1px solid #292929;
+
+
+background:
+    linear-gradient(
+        145deg,
+        #181818,
+        #111
+    );
+
+border-radius: 18px;
+
+box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.level-card {
+min-height: 350px;
+
+
+padding: 32px;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+}
+
+.controls-card {
+padding: 32px;
+}
+
+.card-label {
+font-size: 11px;
+
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+color: #666;
+
+
+}
+
+/* ---------- LEVEL ---------- */
+
+.level {
+margin-top: 35px;
+
+
+font-size: clamp(60px, 10vw, 105px);
+
+font-weight: 800;
+
+letter-spacing: -6px;
+
+line-height: 1;
+
+
+}
+
+.status {
+margin-top: 10px;
+
+
+color: #999;
+
+font-size: 18px;
+
+
+}
+
+/* ---------- TIMER ---------- */
+
+.timer-container {
+margin-top: 30px;
+
+
+padding-top: 20px;
+
+border-top: 1px solid #292929;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.timer-label {
+font-size: 10px;
+
+
+letter-spacing: 2px;
+
+color: #666;
+
+
+}
+
+.timer {
+font-size: 16px;
+
+
+font-weight: 600;
+
+color: #ccc;
+
+
+}
+
+/* ---------- CONTROLS ---------- */
+
+.control {
+margin-top: 35px;
+}
+
+.control-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+margin-bottom: 16px;
+
+
+}
+
+.control-header label {
+font-size: 14px;
+color: #ccc;
+}
+
+#thresholdValue {
+min-width: 35px;
+
+
+padding: 5px 9px;
+
+border-radius: 7px;
+
+background: #252525;
+
+text-align: center;
+
+font-size: 12px;
+font-weight: 700;
+
+
+}
+
+/* ---------- SLIDER ---------- */
+
+input[type="range"] {
+width: 100%;
+
+
+accent-color: #ddd;
+
+cursor: pointer;
+
+
+}
+
+.control p {
+margin-top: 12px;
+
+
+font-size: 12px;
+
+line-height: 1.5;
+
+color: #666;
+
+
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+display: grid;
+
+
+gap: 10px;
+
+margin-top: 40px;
+
+}
+
+button {
+width: 100%;
+
+
+padding: 14px 18px;
+
+border-radius: 10px;
+
+font-size: 14px;
+font-weight: 700;
+
+cursor: pointer;
+
+transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+
+
+}
+
+button:hover {
+transform: translateY(-1px);
+}
+
+button:active {
+transform: translateY(0);
+}
+
+.primary-button {
+border: 1px solid #eee;
+
+
+background: #eee;
+color: #111;
+
+
+}
+
+.primary-button:hover {
+background: white;
+}
+
+.secondary-button {
+border: 1px solid #333;
+
+
+background: #181818;
+
+color: #ccc;
+
+
+}
+
+.secondary-button:hover {
+background: #222;
+
+
+border-color: #444;
+
+
+}
+
+/* ---------- INTERVENTION ---------- */
+
+.intervention-card {
+margin-top: 18px;
+
+
+padding: 25px 30px;
+
+
+}
+
+.intervention-header {
+display: flex;
+
+
+justify-content: space-between;
+align-items: center;
+
+margin-bottom: 22px;
+
+
+}
+
+.intervention-status {
+font-size: 10px;
+
+
+letter-spacing: 1.5px;
+
+color: #555;
+
+
+}
+
+.intervention {
+min-height: 65px;
+
+
+display: flex;
+align-items: center;
+
+font-size: clamp(18px, 3vw, 25px);
+
+line-height: 1.4;
+
+font-weight: 600;
+
+color: #777;
+
+
+}
+
+.intervention:not(:empty) {
+color: #eee;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+margin-top: 25px;
+
+
+display: flex;
+
+justify-content: space-between;
+
+font-size: 9px;
+
+letter-spacing: 1.5px;
+
+color: #444;
+
+}
+
+/* ---------- LEVEL 4 ---------- */
+
+.intervention-mode {
+animation:
+warningPulse 0.8s infinite alternate;
+}
+
+.intervention-mode .level {
+color: #ff6b6b;
+}
+
+.intervention-mode .intervention-card {
+border-color: #5c2525;
+}
+
+@keyframes warningPulse {
+
+
+from {
+    background:
+        radial-gradient(
+            circle at top,
+            #241414 0%,
+            #111 50%,
+            #090909 100%
+        );
+}
+
+to {
+    background:
+        radial-gradient(
+            circle at top,
+            #3a1111 0%,
+            #160909 50%,
+            #090909 100%
+        );
+}
+
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 750px) {
+
+
+body {
+    padding: 25px 15px;
+}
+
+.header {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard {
+    grid-template-columns: 1fr;
+}
+
+.level-card {
+    min-height: 280px;
+}
+
+.level {
+    margin-top: 25px;
+}
+
+footer {
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+}

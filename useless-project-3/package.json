@@ -1,0 +1,28 @@
+{
+  "name": "useless-project-3",
+  "version": "1.0.0",
+  "description": "Brainstorming on ideas.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cap-ain-ha-ch/useless-project-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cap-ain-ha-ch/useless-project-3/issues"
+  },
+  "homepage": "https://github.com/cap-ain-ha-ch/useless-project-3#readme",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^7.1.0",
+    "@google/genai": "^2.22.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "wav": "^1.0.2"
+  }
+}

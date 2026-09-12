@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Dry Air — Silence Detector</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<main class="app">
+
+    <header class="header">
+        <div>
+            <p class="eyebrow">USELESS PROJECT 3.0</p>
+            <h1>Dry Air</h1>
+            <p class="subtitle">
+                An intelligent system for detecting dangerously uncomfortable silence.
+            </p>
+        </div>
+
+        <div class="live-indicator">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+    </header>
+
+
+    <section class="dashboard">
+
+        <div class="level-card">
+
+            <div class="card-label">
+                CURRENT AWKWARDNESS
+            </div>
+
+            <div id="level" class="level">
+                Level 0
+            </div>
+
+            <div id="status" class="status">
+                Not monitoring
+            </div>
+
+            <div class="timer-container">
+                <span class="timer-label">SILENCE DURATION</span>
+                <span id="timer" class="timer">Silence: 0s</span>
+            </div>
+
+        </div>
+
+
+        <div class="controls-card">
+
+            <div class="card-label">
+                SYSTEM CONTROLS
+            </div>
+
+            <div class="control">
+
+                <div class="control-header">
+                    <label for="threshold">
+                        Microphone Threshold
+                    </label>
+
+                    <span id="thresholdValue">
+                        5
+                    </span>
+                </div>
+
+                <input
+                    type="range"
+                    id="threshold"
+                    min="1"
+                    max="30"
+                    value="5"
+                >
+
+                <p>
+                    Higher values make the detector less sensitive.
+                </p>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button
+                    id="startButton"
+                    class="primary-button"
+                >
+                    Start Monitoring
+                </button>
+
+                <button
+                    id="meetingButton"
+                    class="secondary-button"
+                >
+                    Capture Meeting Audio
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="intervention-card">
+
+        <div class="intervention-header">
+            <span class="card-label">
+                AI INTERVENTION
+            </span>
+
+            <span class="intervention-status">
+                STANDBY
+            </span>
+        </div>
+
+        <div
+            id="intervention"
+            class="intervention"
+        >
+            No intervention required.
+        </div>
+
+    </section>
+
+
+    <footer>
+        <span>DRY AIR SILENCE DETECTION SYSTEM</span>
+        <span>GEMINI AI + WEB AUDIO API</span>
+    </footer>
+
+</main>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
